@@ -2,6 +2,7 @@ package com.pos.service.impl;
 
 import com.pos.models.User;
 import com.pos.repository.UserRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,6 +15,7 @@ import java.util.Collections;
 
 
 @Service
+@AllArgsConstructor
 public class CustomUserImpl implements UserDetailsService {
 
     private UserRepository userRepository;
