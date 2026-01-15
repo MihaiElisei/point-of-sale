@@ -34,6 +34,9 @@ public class User {
     @Column(nullable = false)
     private UserRole role;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Store store;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private LocalDateTime lastLogin;
