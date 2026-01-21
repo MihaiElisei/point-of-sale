@@ -29,7 +29,7 @@ public class BranchController {
     }
 
     @GetMapping("/store/{storeId}")
-    public ResponseEntity<List<BranchDto>> getAllBranchesByStoreId(@PathVariable Long storeId) throws Exception {
+    public ResponseEntity<List<BranchDto>> getAllBranchesByStoreId(@PathVariable Long storeId) {
         List<BranchDto> branches = branchService.getAllBranchesByStoreId(storeId);
         return ResponseEntity.ok(branches);
     }
