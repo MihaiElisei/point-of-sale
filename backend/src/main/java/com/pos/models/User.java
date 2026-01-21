@@ -35,6 +35,9 @@ public class User {
     private UserRole role;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    private Branch branch;
+
+    @ManyToOne(fetch = FetchType.LAZY)
     private Store store;
 
     private LocalDateTime createdAt;
