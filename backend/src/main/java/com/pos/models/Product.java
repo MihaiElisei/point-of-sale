@@ -27,6 +27,7 @@ public class Product {
 
     private Double mrp;
 
+    @Column(nullable = false)
     private Double sellingPrice;
 
     private String brand;
